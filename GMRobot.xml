@@ -1,29 +1,33 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="322" inline="true" x="161" y="-100">
+  <block type="controls_repeat" id="322" inline="true" x="111" y="-152">
     <value name="TIMES">
       <block type="math_number" id="359">
         <field name="NUM">10000</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="oled_drawnumber" id="280" inline="true">
-        <value name="NUMBER">
-          <block type="sensor_spectrometer" id="163">
-            <field name="LIGHT">RED</field>
-          </block>
-        </value>
+      <block type="oled_cleardisplay" id="397">
         <next>
-          <block type="oled_setcursor" id="368" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="381">
-                <field name="NUM">0</field>
+          <block type="oled_drawnumber" id="280" inline="true">
+            <value name="NUMBER">
+              <block type="sensor_spectrometer" id="163">
+                <field name="LIGHT">RED</field>
               </block>
             </value>
-            <value name="STARTY">
-              <block type="math_number" id="388">
-                <field name="NUM">0</field>
+            <next>
+              <block type="oled_setcursor" id="368" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="381">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="388">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
               </block>
-            </value>
+            </next>
           </block>
         </next>
       </block>
