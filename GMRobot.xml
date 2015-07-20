@@ -12,6 +12,20 @@
             <field name="LIGHT">RED</field>
           </block>
         </value>
+        <next>
+          <block type="oled_setcursor" id="368" inline="true">
+            <value name="STARTX">
+              <block type="math_number" id="381">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <value name="STARTY">
+              <block type="math_number" id="388">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </next>
       </block>
     </statement>
   </block>
