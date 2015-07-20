@@ -3,11 +3,7 @@
     <next>
       <block type="movement_right" id="11">
         <next>
-          <block type="movement_left" id="32">
-            <next>
-              <block type="movement_stutter" id="52"></block>
-            </next>
-          </block>
+          <block type="movement_stutter" id="52"></block>
         </next>
       </block>
     </next>
