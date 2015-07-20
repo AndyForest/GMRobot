@@ -1,9 +1,18 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_drawnumber" id="280" inline="true" x="112" y="-195">
-    <value name="NUMBER">
-      <block type="sensor_spectrometer" id="163">
-        <field name="LIGHT">RED</field>
+  <block type="controls_repeat" id="322" inline="true" x="161" y="-100">
+    <value name="TIMES">
+      <block type="math_number" id="359">
+        <field name="NUM">10000</field>
       </block>
     </value>
+    <statement name="DO">
+      <block type="oled_drawnumber" id="280" inline="true">
+        <value name="NUMBER">
+          <block type="sensor_spectrometer" id="163">
+            <field name="LIGHT">RED</field>
+          </block>
+        </value>
+      </block>
+    </statement>
   </block>
 </xml>
